@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/*header*/
+.cabecalho {
+  width: 100%;
+  background-color: #edf3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  font-size: 1.3em;
+  margin: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li a:hover {
+  color: rgb(251, 38, 0);
+  border-bottom: 2px solid #000;
+  transition: 0.5s;
+}
+/*banner*/
+.banner {
+  width: 100%;
+  background-image: url('../_img/medium-shot-friends-sitting-table.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15%;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 2em;
+  color: #fff;
+}
+.banner p {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #010a0e;
+}
+.fundo {
+  width: 100%;
+  background-color: #e5d3d38a;
+}
+/*Serviços*/
+.servicos {
+  padding: 3%;
+  background-color: #edf3f5;
+}
+.servicos h2 {
+  text-align: center;
+  font-size: 2em;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.servicos ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicos ul li {
+  width: 300px;
+  height: 350px;
+  background-color: #fff;
+  margin-right: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.servicos ul li:last-child {
+  margin-right: 0;
+}
+.servicos ul li p {
+  margin-bottom: 10px;
+}
+.servicos ul li h3 {
+  margin-bottom: 10px;
+}
+.servicos ul li img {
+  margin-bottom: 10px;
+}
+.servicos ul li a {
+  text-decoration: none;
+  color: orangered;
+}
+.servicos ul li a:hover {
+  color: #000;
+  border-bottom: 2px solid orangered;
+}
+/*quem-somos*/
+.quem-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 3%;
+}
+.quem-somos h2 {
+  text-align: center;
+  font-size: 2em;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.quem-somos p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.quem-somos div {
+  display: flex;
+}
+
+.quem-somos ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quem-somos ul li {
+  width: 300px;
+  height: 230px;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*contactos*/
+.contactos {
+  /*display: flex;
+  flex-direction: column;*/
+  background-color: #edf3f5;
+}
+.contactos span {
+  display: flex;
+
+  align-items: center;
+}
+.contactos i {
+  color: orangered;
+  margin-bottom: 10px;
+}
+.contactos h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactos form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+.contactos form fieldset {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+.contactos form fieldset legend {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contactos form fieldset input {
+  outline: none;
+  width: 450px;
+  height: 60px;
+  padding: 5px;
+  background-color: #edf3f5;
+  border-bottom: solid 1px orangered;
+  margin-bottom: 20px;
+}
+.contactos form fieldset textarea {
+  width: 450px;
+  height: 300px;
+  margin-bottom: 5px;
+  background-color: #edf3f5;
+  border: solid 1px orangered;
+  outline: none;
+}
+.contactos form fieldset button {
+  width: 150px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: orangered;
+  border: none;
+  color: #fff;
+}
+.contactos div {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2%;
+}
+.contactos div iframe {
+  margin-right: 50px;
+}
+
+.contactos div h2 {
+  font-size: 2em;
+  text-align: left !important;
+}
+/*footer*/
+footer {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer i {
+  font-size: 1.3em;
+  color: orangered;
+}
+footer a {
+  color: orangered;
+  text-decoration: none;
+}
+footer a:hover {
+  color: cadetblue;
+  transition: 1s;
+  text-decoration: underline;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 480px) {
+  .cabecalho {
+    padding: 0;
+    justify-content: center;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(251, 38, 0);
+  }
+  .menu ul li a:hover {
+    color: #000;
+    border-bottom: 2px solid rgb(251, 38, 0);
+  }
+  .menu ul li {
+    font-size: 1em;
+    margin: 5px;
+    padding: 0;
+  }
+
+  /*banner*/
+  .banner {
+    padding: 0;
+  }
+  .banner h1 {
+    font-size: 0;
+  }
+  .banner p {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: normal;
+    padding: 5px;
+  }
+  /*Serviços*/
+  .servicos {
+    padding: 0;
+    background-color: #edf3f5;
+  }
+  .servicos h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .servicos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicos ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .servicos ul li:nth-child(1) {
+    height: 290px;
+  }
+  .servicos ul li:nth-child(2) {
+    height: 238px;
+  }
+  .servicos ul li:nth-child(3) {
+    height: 350px;
+  }
+  /*quem-somos*/
+  .quem-somos {
+    margin-bottom: 0;
+    padding: 8px;
+  }
+  .quem-somos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .quem-somos ul li {
+    height: 200px;
+    padding: 5px;
+  }
+  /*contactos*/
+  .contactos {
+    padding: 0;
+    background-color: #edf3f5;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactos span {
+    flex-direction: column;
+    margin: 0;
+  }
+  .contactos span iframe {
+    display: none;
+    width: 250px;
+    height: 200px;
+  }
+  
+  .contactos h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  .contactos form {
+    width: 300px;
+    padding: 5px;
+    border: none;
+  }
+  .contactos form fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactos form fieldset input {
+    outline: none;
+    width: 250px;
+  }
+  .contactos form fieldset textarea {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+/*small devices - tablet
+@media screen and (min-width: 480px) {*/
+/*medium devices - tablet & pc*/
+@media screen and (max-width: 960px) {
+  .quem-somos {
+    margin-bottom: 0;
+    padding: 8px;
+  }
+  .quem-somos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .quem-somos ul li {
+    width: 250px;
+  }
+  .servicos ul {
+    flex-wrap: wrap;
+  }
+  .servicos ul li {
+    margin: 0 10px 10px;
+    border: 1px solid rgba(184, 183, 183, 0.63);
+  }
+  .contactos span {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .contactos div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contactos form {
+    width: 250px;
+    
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .contactos form fieldset legend {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .contactos form fieldset input {
+    width: 250px;
+  }
+
+  .contactos form fieldset textarea {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 5px;
+    border: solid 1px orangered;
+    outline: none;
+  }
+  .contactos span iframe {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+  }
+}
+/*large devices - wide screens
+@media screen and (min-width: 1280px)*/

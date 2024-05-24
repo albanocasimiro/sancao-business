@@ -1,0 +1,313 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/*header*/
+.cabecalho {
+  width: 100%;
+  background-color: #edf3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  font-size: 1.3em;
+  margin: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li a:hover {
+  color: rgb(251, 38, 0);
+  border-bottom: 2px solid #000;
+  transition: 0.5s;
+}
+
+/*section bem-vindo*/
+
+.bem-vindo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding: 2%;
+}
+.bem-vindo h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.bem-vindo p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+.bem-vindo div {
+  margin-left: 30px;
+}
+/*section serviços*/
+.servicos{
+  display: flex;
+  padding: 3%;
+  align-items: center;
+
+}
+.servicos li{
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+.servicos ul:first-child{
+  margin-right: 50px;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #edf3f5;;
+}
+.contactos span {
+  display: flex;
+
+  align-items: center;
+}
+.contactos i {
+  color: orangered;
+  margin-bottom: 10px;
+}
+.contactos h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contactos form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+.contactos form fieldset {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+.contactos form fieldset legend {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contactos form fieldset input {
+  outline: none;
+  width: 450px;
+  height: 60px;
+  padding: 5px;
+  background-color: #edf3f5;
+  border-bottom: solid 1px orangered;
+  margin-bottom: 20px;
+}
+.contactos form fieldset textarea {
+  width: 450px;
+  height: 300px;
+  margin-bottom: 5px;
+  background-color: #edf3f5;
+  border: solid 1px orangered;
+  outline: none;
+}
+.contactos form fieldset button {
+  width: 150px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: orangered;
+  border: none;
+  color: #fff;
+}
+/*footer*/
+footer {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer i {
+  font-size: 1.3em;
+  color: orangered;
+}
+footer a {
+  color: orangered;
+  text-decoration: none;
+}
+footer a:hover {
+  color: cadetblue;
+  transition: 1s;
+  text-decoration: underline;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 480px) {
+  .cabecalho{
+    padding: 0;
+    justify-content: center;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(251, 38, 0);
+  }
+  .menu ul li a:hover {
+    color: #000;
+    border-bottom: 2px solid rgb(251, 38, 0);
+    
+  }
+  .menu ul li {
+    font-size: 1em;
+    margin: 5px;
+    padding: 0;
+  }
+/*contactos*/
+.contactos {
+  padding: 0;
+  background-color: #edf3f5;
+  justify-content: center;
+  align-items: center;
+}
+.contactos span {
+  flex-direction: column;
+  margin: 0;
+}
+  /*section bem-vindo*/
+
+.bem-vindo div{
+  padding: 2%;
+ margin-left: 0;
+}
+.bem-vindo img{
+  display: none;
+}
+.bem-vindo h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.bem-vindo p {
+  font-size: 1.2em;
+ 
+}
+
+ /*section servicos*/
+ .servicos{
+   
+   padding: 2%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .servicos li{
+ 
+  list-style-type: none;
+
+}
+.servicos ul:first-child{
+  margin-right: 0px;
+}
+
+}
+
+/*small devices - tablet
+@media screen and (min-width: 480px) {*/
+/*medium devices - tablet & pc*/
+@media screen and (max-width: 960px) {
+  .bem-vindo {
+    flex-direction: column;
+  }
+  .bem-vindo img{
+    width: 250px;
+  }
+  .bem-vindo h1{
+    text-align: center;
+  }
+  .bem-vindo div{
+    padding: 2%;
+    margin-left: 0;
+  }
+  .quem-somos ul {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .quem-somos ul li {
+    width: 250px;
+  }
+  .servicos ul{
+    flex-wrap: wrap;
+  }
+  .servicos ul li {
+    margin:0 10px 10px;
+    border: 1px solid rgba(184, 183, 183, 0.63);
+  }
+  .contactos span{
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .contactos div{
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  
+  .contactos form {
+    width: 250px;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .contactos form fieldset legend{
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .contactos form fieldset input{
+    width: 250px;
+  }
+ 
+  .contactos form fieldset textarea{
+    width: 250px;
+    height: 150px;
+    margin-bottom: 5px;
+    border: solid 1px orangered;
+    outline: none;
+  }
+  .contactos span iframe{
+   
+    text-align: center;
+    width: 100%;
+    height: 200px;
+  }
+  
+}
+/*large devices - wide screens
+@media screen and (min-width: 1280px)*/
